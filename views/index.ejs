@@ -1,0 +1,13 @@
+<%-include("partials/header")%>
+
+<h1>Your Posts</h1>
+
+<%aditya.forEach((post)=>{%>
+  <h4><%=post.title%></h4>
+  <p><%=post.post.substring(0,200)+"..."%> <a href="/posts/<%=post.title%>" >Read more</a> </p>
+  <%})%>
+
+
+
+<%-include("partials/footer")%>
+
